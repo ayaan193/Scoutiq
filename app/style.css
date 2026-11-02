@@ -3,3 +3,20 @@
 :root .player-filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;align-items:stretch}
 .player-filters>*{width:100%!important;min-width:0}
 .results-count{font-size:12px;color:#63715c;margin:-6px 0 12px;font-weight:700}
+aside .brand{padding-bottom:24px}
+aside nav{flex:1;min-height:0;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#92ad7b transparent;padding-right:4px}
+aside .sidebar-bottom{flex-shrink:0;margin-top:18px}
+.nav-section-label{padding:22px 17px 8px;color:#b9c5ae;font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+nav button:focus-visible{outline:2px solid var(--blue);outline-offset:-2px}
+.database-feature{max-width:1100px}
+.feature-intro{margin-bottom:18px}
+.feature-status{display:inline-block;margin:14px 0;background:#e6ebd8;color:#53663a;border-radius:20px;padding:6px 10px;font-size:12px;font-weight:700}
+.feature-intro p,.feature-example p{line-height:1.7;max-width:82ch;color:#4e5c47}
+.feature-examples{display:grid;gap:18px}
+.feature-example{min-width:0;overflow:hidden}
+.feature-example h2{cursor:default}
+.feature-code-heading{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font-size:11px;color:#63715c;margin:20px 0 8px;overflow-wrap:anywhere}
+.feature-example pre{margin:0;background:#253622;color:#e3edda;padding:20px;border-radius:9px;overflow:auto;font-size:12px;line-height:1.8;tab-size:2}
+.feature-example pre:focus-visible{outline:2px solid var(--leaf);outline-offset:3px}
+@media(max-width:900px){aside{width:160px;min-width:160px}aside nav button{font-size:12px;padding:10px}aside nav button:first-letter{font-size:inherit}.nav-section-label{padding-left:10px;font-size:9px}}
+@media(max-width:600px){.shell{flex-direction:column}aside{position:relative;width:100%;min-width:0;height:auto;padding:14px}aside .brand{padding:0 0 12px;font-size:24px}aside nav{display:flex;overflow-x:auto;overflow-y:hidden;gap:6px;padding:3px;flex:none}aside nav button{width:auto;flex-shrink:0;white-space:nowrap}.nav-section-label{align-self:center;flex-shrink:0;padding:0 8px}aside .sidebar-bottom{display:flex;font-size:12px;margin-top:10px;padding-top:10px}aside .sidebar-bottom small{font-size:11px}.feature-example pre{padding:14px;font-size:11px}}
